@@ -1,0 +1,112 @@
+ls
+l
+ls
+tree
+tree -h
+tree --help
+tree -L 2
+winget install --id Starship.Starship -s winget
+$env.STARSHIP_SHELL
+$env.STARSHIP_SHELL = "nu"
+$env.STARSHIP_SHELL
+$nu.env-path
+cd $nu.env-path
+cdi
+zoxide
+zoxide init -h
+zoxide init nu -cmd cd
+zoxide init nu -c-md cd
+zoxide init nu --cmd cd
+zoxide init nushell --cmd cd
+ls
+clear
+ls | sort-by size | reverse
+ps
+ps | where cpu > 5
+date now
+ls
+sys
+sys | get host
+nvim $nu.env-path
+restart
+source $nu.config-path
+source $nu.env-path
+ls
+nvim $nu.env-path
+nvim $nu.config-path
+ls
+starship preset nerd-font-symbols -o ~/.config/starship.toml
+cd app data
+cd appdata
+ls
+cd local
+ls
+mkdir startship
+cd startship\
+ls
+nvim
+starship preset nerd-font-symbols -o ~\AppData\Local\startship\starship.toml
+nerdfond
+nerdfont
+starship preset bracketed-segments -o ~\AppData\Local\startship\starship.toml
+ls
+cd startship
+cdi
+zoxide init nushell --cmd cd
+cdi
+cd
+cd egse
+ls
+cd nvim
+zoxide
+zd
+zoxide init nushell --cmd cd
+cdi
+cd nvim
+ls
+$nu.env-path
+$nu.config-path
+cd $nu.env-path
+cd AppData\Roaming\nushell\
+ls
+z 
+zoxide init nushell --cmd cd
+z
+zoxide init nushell
+z
+help
+version
+z
+zi
+cd
+zoxide
+nvim
+z
+zoxide
+zoxide init nushell
+zoxide version
+zoxide --version
+cargo -h
+cargo update zoxide
+cdi
+z
+zoxide --version
+yy
+cd AppData\Roaming\nushell\
+ls
+nvim .
+z
+zi
+cdi
+cd
+cdi
+zi
+z
+cdi
+cd nvim
+ls
+nvim .
+ls
+git init
+lazygit
+git remote add origin https://github.com/KapJ1coH/nushell.git
