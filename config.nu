@@ -20,6 +20,7 @@
 source $"($nu.home-path)/.cargo/env.nu"
 
 $env.config.buffer_editor = "nvim"
+$env.config.show_banner = false
 
 def --env yy [...args] {
 	let tmp = (mktemp -t "yazi-cwd.XXXXXX")
@@ -31,6 +32,12 @@ def --env yy [...args] {
 	rm -fp $tmp
 }
 
+
 # alias cd = z
 
+mkdir ($nu.data-dir | path join "vendor/autoload")
+starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
+
 source ~/.zoxide.nu
+
+fastfetch
