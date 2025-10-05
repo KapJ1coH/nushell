@@ -33,11 +33,11 @@ def --env yy [...args] {
 }
 
 
-# alias cd = z
 
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
 source ~/.zoxide.nu
+alias cd = z
 
 fastfetch
