@@ -18,5 +18,7 @@
 # them for future reference.
 $env.PATH ++= ["~/.cargo/bin/", "/usr/local/cuda-13.0/bin"]
 
+$env.EDITOR = "nvim"
+
 # end of the file
 zoxide init nushell | save -f ~/.zoxide.nu
