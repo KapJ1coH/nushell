@@ -17,7 +17,7 @@
 # options using:
 #     config nu --doc | nu-highlight | less -R
 
-source $"($nu.home-path)/.cargo/env.nu"
+source "/home/kapj1coh/.config/nushell/env.nu"
 
 
 
