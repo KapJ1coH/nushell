@@ -18,7 +18,9 @@
 # them for future reference.
 $env.PATH ++= ["~/.cargo/bin/", "/usr/local/cuda-13.0/bin",
 "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp-elf/esp-15.2.0_20250920/xtensa-esp-elf/bin",
-"/opt/bricsys/bricscad/v26"]
+"/opt/bricsys/bricscad/v26",
+"/home/kapj1coh/crack-of-doom/projects/coding/oss/prog-rs/target/release/"
+]
 
 $env.EDITOR = "nvim"
 
@@ -28,4 +30,7 @@ $env.XDG_DATA_HOME = $env.HOME + /.local/share
 zoxide init nushell | save -f ~/.zoxide.nu
 
 # rust esp stuff
-$env.LIBCLANG_PATH = "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-20.1.1_20250829/esp-clang/lib"
+# $env.LIBCLANG_PATH = "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-20.1.1_20250829/esp-clang/lib"
+
+# Linux compilation
+$env.LIBCLANG_PATH = "/usr/lib64/llvm21/lib64"

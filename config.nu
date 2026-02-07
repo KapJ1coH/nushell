@@ -76,6 +76,16 @@ def --env yy [...args] {
 	rm -fp $tmp
 }
 
+# Switching between kernel LLVM and esp32 LLVM as they're different version.
+def --env kernel-env [] {
+    $env.LIBCLANG_PATH = "/usr/lib64/llvm21/lib64"
+    print "Switched to Kernel LLVM (v21)"
+}
+def --env esp-env [] {
+    $env.LIBCLANG_PATH = "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-20.1.1_20250829/esp-clang/lib"
+    print "Switched to ESP32 LLVM"
+}
+
 mkdir ($nu.data-dir | path join "vendor/autoload")
 starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.nu")
 
@@ -85,3 +95,5 @@ alias cd = z
 
 
 fastfetch
+
+prog-rs list
