@@ -93,6 +93,14 @@ starship init nu | save -f ($nu.data-dir | path join "vendor/autoload/starship.n
 source ~/.zoxide.nu
 alias cd = z
 
+# Gephi specific command to make it actually launch and show graps. 
+alias gephi = with-env {
+  XDG_CURRENT_DESKTOP: "GNOME"
+  GDK_BACKEND: "x11"
+  _JAVA_AWT_WM_NONREPARENTING: "1"
+  _JAVA_OPTIONS: "-Dsun.java2d.opengl=false"
+} { /home/kapj1coh/Applications/rpms/gephi-0.10.1/bin/gephi }
+
 
 fastfetch
 

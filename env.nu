@@ -19,7 +19,9 @@
 $env.PATH ++= ["~/.cargo/bin/", "/usr/local/cuda-13.0/bin",
 "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp-elf/esp-15.2.0_20250920/xtensa-esp-elf/bin",
 "/opt/bricsys/bricscad/v26",
-"/home/kapj1coh/crack-of-doom/projects/coding/oss/prog-rs/target/release/"
+"/home/kapj1coh/crack-of-doom/projects/coding/oss/prog-rs/target/release/",
+"/home/kapj1coh/go/bin",
+"~/.spicetify",
 ]
 
 $env.EDITOR = "nvim"
