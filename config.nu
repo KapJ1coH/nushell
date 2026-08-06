@@ -78,8 +78,8 @@ def --env yy [...args] {
 
 # Switching between kernel LLVM and esp32 LLVM as they're different version.
 def --env kernel-env [] {
-    $env.LIBCLANG_PATH = "/usr/lib64/llvm21/lib64"
-    print "Switched to Kernel LLVM (v21)"
+    $env.LIBCLANG_PATH = "/usr/lib64/llvm22/lib64"
+    print "Switched to Kernel LLVM (v22)"
 }
 def --env esp-env [] {
     $env.LIBCLANG_PATH = "/home/kapj1coh/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-20.1.1_20250829/esp-clang/lib"
@@ -104,4 +104,4 @@ alias gephi = with-env {
 
 fastfetch
 
-prog-rs list
+# prog-rs list

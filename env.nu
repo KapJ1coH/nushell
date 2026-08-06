@@ -22,9 +22,13 @@ $env.PATH ++= ["~/.cargo/bin/", "/usr/local/cuda-13.0/bin",
 "/home/kapj1coh/crack-of-doom/projects/coding/oss/prog-rs/target/release/",
 "/home/kapj1coh/go/bin",
 "~/.spicetify",
+"/home/kapj1coh/crack-of-doom/projects/coding/tools/amex_budget_clean/target/release",
+"~/.npm-global/bin",
 ]
 
 $env.EDITOR = "nvim"
+
+$env.CODEX_CLI_PATH = "/home/kapj1coh/.local/bin/codex"
 
 $env.XDG_DATA_HOME = $env.HOME + /.local/share
 
