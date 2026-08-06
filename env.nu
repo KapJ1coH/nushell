@@ -102,6 +102,15 @@ $env.PATH = (
 $env.EDITOR = "nvim"
 $env.VISUAL = "nvim"
 
+if $IS_MAC {
+    let onepw_sock = ($nu.home-path | path join "Library" "Group Containers" "2BUA8C4S2C.com.1password" "t" "agent.sock")
+    if ($onepw_sock | path exists) {
+        $env.SSH_AUTH_SOCK = $onepw_sock
+    } else {
+        print "1Password SSH agent socket not found -- is the SSH agent enabled in 1Password?"
+    }
+}
+
 $env.CODEX_CLI_PATH = ($HOME | path join ".local" "bin" "codex")
 
 # Keep XDG data under ~/.local/share on both platforms so caches/state land in
